@@ -615,7 +615,7 @@ asynchronous call into synchronous.")
 
 (defvar company-active-map
   (let ((keymap (make-sparse-keymap)))
-    (define-key keymap "\e" 'company-abort)
+    (define-key keymap (kbd "<escape>") 'company-abort)
     (define-key keymap "\C-g" 'company-abort)
     (define-key keymap (kbd "M-n") 'company-select-next)
     (define-key keymap (kbd "M-p") 'company-select-previous)
